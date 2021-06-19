@@ -14,8 +14,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libsm6 \
         libxext6 \
         libxrender-dev \
-        python3-opencv && \
-    rm -rf /var/lib/apt/lists/*
+        python3-opencv \ 
+        libgdal \
+        libgdal-dev \
+        gdal-bin \
+        libproj-dev \
+    &&  rm -rf /var/lib/apt/lists/*
 ENV PATH /opt/conda/bin:$PATH
 CMD [ "/bin/bash" ]
 # Leave these args here to better use the Docker build cache
@@ -38,12 +42,13 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-${CONDA_VERSION}
 COPY ./environment.yml /tmp/environment.yml
 RUN conda env create -f /tmp/environment.yml
 
-ENV LD_LIBRARY_PATH /miniconda/lib:${LD_LIBRARY_PATH}
+ENV LD_LIBRARY_PATH /opt/conda/lib:/opt/conda/envs/cresi/lib:${LD_LIBRARY_PATH}
+
 RUN apt install -y libgl1-mesa-glx
 
 RUN /opt/conda/bin/conda clean -ya
 
-# Activate conda environment
+#  PATH into conda environment
 ENV PATH /opt/conda/envs/cresi/bin:$PATH
 
 # specify vscode as the user name in the docker

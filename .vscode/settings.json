@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/opt/conda/envs/cresi/bin/python",
+    "jupyter.jupyterServerType": "remote"
+}
