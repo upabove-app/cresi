@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-nvidia-docker build --no-cache -t cresi_v3_image .
+docker build -f dev.Dockerfile -t cresi_v4_image . 

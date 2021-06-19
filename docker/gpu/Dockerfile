@@ -45,7 +45,9 @@ RUN apt-get update \
 	tmux \
 	wget \
 	build-essential \
-  && apt-get clean \
+	libproj-dev \ 
+	gdal-bin \
+	&& apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
 SHELL ["/bin/bash", "-c"]
@@ -119,7 +121,7 @@ RUN conda install -n cresi \
 		testpath \
 		tqdm \
 		pandas \
-		opencv \
+		opencv-python \
 		jupyter \
 		jupyterlab \
 		ipykernel \
@@ -135,7 +137,7 @@ RUN conda install -n cresi pytorch torchvision cuda90 -c pytorch \
 	&& conda clean -t \
 	&& conda clean --yes --all
 	
-ENV LD_LIBRARY_PATH /miniconda/lib:${LD_LIBRARY_PATH}
+ENV LD_LIBRARY_PATH /opt/conda/lib:${LD_LIBRARY_PATH}
 RUN apt install -y libgl1-mesa-glx
 
 # add a jupyter kernel for the conda environment in case it's wanted

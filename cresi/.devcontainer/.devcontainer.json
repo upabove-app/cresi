@@ -1,0 +1,42 @@
+{
+    "image": "cresi_v4_image:latest",
+    "settings": {
+        "terminal.integrated.profiles.linux": {
+            "zsh (login)": {
+              "path": "bash",
+              "args": ["-l"]
+            }
+          },
+        "python.pythonPath": "/opt/conda/envs/cresi/bin/python",
+        "python.languageServer": "Pylance",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true
+    },
+
+// Add the IDs of extensions you want installed when the container is created.
+"extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance"
+],
+
+// Use 'forwardPorts' to make a list of ports inside the container available locally.
+"forwardPorts": [8100],
+
+// Uncomment the next line if you want start specific services in your Docker Compose config.
+// "runServices": [],
+
+// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
+// "shutdownAction": "none",
+
+// Uncomment the next line to run commands after the container is created - for example installing curl.
+//"postCreateCommand": ["apt-get update && apt-get install -y curl", "pip3 install -r requirements.txt"],
+
+// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
+"remoteUser": "vscode",
+
+"mounts": [
+    "source=projectname-bashhistory,target=/commandhistory,type=volume"
+]
+
+}
+
