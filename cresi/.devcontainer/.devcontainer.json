@@ -1,42 +1,77 @@
 {
-    "image": "cresi_v4_image:latest",
-    "settings": {
-        "terminal.integrated.profiles.linux": {
-            "zsh (login)": {
-              "path": "bash",
-              "args": ["-l"]
-            }
-          },
+    // The context setting is the location where the docker file will be built from. You can specify the path relative to this file.
+    "context": "../",
+    // This is the name of the dockerfile. It is also specified as a path relative to this file.
+    "dockerFile": "../docker/gpu/dev.Dockerfile",
+	"build": {
+		"args": {
+			"WORKSPACE": "${containerWorkspaceFolder}"
+		}
+	},
+    // Connect as a non-root user if you've added one. The user name should match a non-root user inside your docker container. VSCode will update that users User ID/Group ID to match yours so that files created within the container will have your user id/group 
+    // See https://aka.ms/vscode-remote/containers/non-root.
+    "remoteUser": "vscode",
+    // These are the arguments you want to pass into the docker run command. You can place any argument that is valid to use with docker run
+    "runArgs": [
+		"--network=host",
+		"--cap-add=SYS_PTRACE",
+		"--security-opt=seccomp:unconfined",
+		"--security-opt=apparmor:unconfined",
+		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
+		"--gpus all",
+		" --shm-size 8G"
+	],
+	"containerEnv": { "DISPLAY": "${localEnv:DISPLAY}" },
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "bash"
+			},
+		},
+		"terminal.integrated.defaultProfile.linux": "bash",
         "python.pythonPath": "/opt/conda/envs/cresi/bin/python",
         "python.languageServer": "Pylance",
         "python.linting.enabled": true,
         "python.linting.pylintEnabled": true
-    },
+	},
+    // Add the IDs of extensions you want installed when the container is created.
 
-// Add the IDs of extensions you want installed when the container is created.
-"extensions": [
-    "ms-python.python",
-    "ms-python.vscode-pylance"
-],
+	"extensions": [
+		"dotjoshjohnson.xml",
+		"zachflower.uncrustify",
+		"ms-azuretools.vscode-docker",
+		"ms-iot.vscode-ros",
+		"ms-python.python",
+		"ms-vscode.cpptools",
+		"redhat.vscode-yaml",
+		"smilerobotics.urdf",
+		"streetsidesoftware.code-spell-checker",
+		"twxs.cmake",
+		"yzhang.markdown-all-in-one",
+        "ms-python.vscode-pylance"
+	],
+        
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [8888, 8100],
 
-// Use 'forwardPorts' to make a list of ports inside the container available locally.
-"forwardPorts": [8100],
+	// Uncomment the next line if you want start specific services in your Docker Compose config.
+	// "runServices": [],
 
-// Uncomment the next line if you want start specific services in your Docker Compose config.
-// "runServices": [],
+	// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
+	// "shutdownAction": "none",
 
-// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
-// "shutdownAction": "none",
+	// Uncomment the next line to run commands after the container is created - for example installing curl.
+	//"postCreateCommand": ["apt-get update && apt-get install -y curl", "pip3 install -r requirements.txt"],
 
-// Uncomment the next line to run commands after the container is created - for example installing curl.
-//"postCreateCommand": ["apt-get update && apt-get install -y curl", "pip3 install -r requirements.txt"],
+	"mounts": [
+		"source=${localWorkspaceFolder}:/workspace, type=volume",
+		"source=/data-1/s3:/data, type=volume",
+		// persit local history of bash commands
+		"source=projectname-bashhistory,target=/commandhistory,type=volume"
+	],
 
-// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
-"remoteUser": "vscode",
-
-"mounts": [
-    "source=projectname-bashhistory,target=/commandhistory,type=volume"
-]
+	// Use 'postStartCommand' to run commands after the container is created.
+	"postStartCommand": "nohup bash -c 'jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root &'",
 
 }
-

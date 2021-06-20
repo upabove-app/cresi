@@ -15,7 +15,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libxext6 \
         libxrender-dev \
         python3-opencv \ 
-        libgdal \
         libgdal-dev \
         gdal-bin \
         libproj-dev \
@@ -44,7 +43,7 @@ RUN conda env create -f /tmp/environment.yml
 
 ENV LD_LIBRARY_PATH /opt/conda/lib:/opt/conda/envs/cresi/lib:${LD_LIBRARY_PATH}
 
-RUN apt install -y libgl1-mesa-glx
+RUN apt-get update -y && apt-get install -y libgl1-mesa-glx
 
 RUN /opt/conda/bin/conda clean -ya
 
@@ -52,17 +51,41 @@ RUN /opt/conda/bin/conda clean -ya
 ENV PATH /opt/conda/envs/cresi/bin:$PATH
 
 # specify vscode as the user name in the docker
+# This user name should match that of the VS Code .devcontainer to allow seamless development inside the docker container via vscode 
+ARG USERNAME=vscode
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
 
-ARG USERNAME=root
+# Create a non-root user
+RUN groupadd --gid $USER_GID $USERNAME \
+  && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
+  # [Optional] Add sudo support for the non-root user - this is ok for development dockers only
+  && apt-get update \
+  && apt-get install -y sudo \
+  && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
+  && chmod 0440 /etc/sudoers.d/$USERNAME \
+  # Cleanup
+  && rm -rf /var/lib/apt/lists/* \
+  # Set up git completion.
+  && echo "source /usr/share/bash-completion/completions/git" >> /home/$USERNAME/.bashrc 
+ENV DEBIAN_FRONTEND=
 
-# RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history" \
-#     && mkdir /commandhistory \
-#     && touch /commandhistory/.bash_history \
-#     && chown -R $USERNAME /commandhistory \
-#     && echo $SNIPPET >> "/home/$USERNAME/.bashrc"
+RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history" \
+    && mkdir /commandhistory \
+    && touch /commandhistory/.bash_history \
+    && chown -R $USERNAME /commandhistory \
+    && echo $SNIPPET >> "/home/$USERNAME/.bashrc"
+
+# Expose ports needed for development
+EXPOSE 8100
 
 # Specify matplotlib backend
 WORKDIR /${USERNAME}/.config/matplotlib
 RUN echo "backend : Agg" >> matplotlibrc
+
+# Env vars for the nvidia-container-runtime.
+ENV NVIDIA_VISIBLE_DEVICES all
+ENV NVIDIA_DRIVER_CAPABILITIES graphics,utility,compute
+ENV QT_X11_NO_MITSHM 1
 
 WORKDIR /workspace
