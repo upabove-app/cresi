@@ -1,13 +1,28 @@
 {
+	"name": "cresi",
     // The context setting is the location where the docker file will be built from. You can specify the path relative to this file.
-    "context": "../",
-    // This is the name of the dockerfile. It is also specified as a path relative to this file.
-    "dockerFile": "../docker/gpu/dev.Dockerfile",
-	"build": {
+    "build": {
+		"context": "..",
+    	// This is the name of the dockerfile. It is also specified as a path relative to this file.
+    	"dockerfile": "../docker/gpu/dev.Dockerfile",
 		"args": {
-			"WORKSPACE": "${containerWorkspaceFolder}"
-		}
-	},
+					"WORKSPACE": "${containerWorkspaceFolder}"
+			}
+		},
+		// Set *default* container specific settings.json values on container create.
+		"settings": {
+			"terminal.integrated.profiles.linux": {
+				"bash": {
+					"path": "bash"
+				},
+			},
+			"terminal.integrated.defaultProfile.linux": "bash",
+			"python.pythonPath": "/opt/conda/envs/cresi/bin/python",
+			"python.languageServer": "Pylance",
+			"python.linting.enabled": true,
+			"python.linting.pylintEnabled": true
+		},
+	
     // Connect as a non-root user if you've added one. The user name should match a non-root user inside your docker container. VSCode will update that users User ID/Group ID to match yours so that files created within the container will have your user id/group 
     // See https://aka.ms/vscode-remote/containers/non-root.
     "remoteUser": "vscode",
@@ -22,19 +37,7 @@
 		" --shm-size 8G"
 	],
 	"containerEnv": { "DISPLAY": "${localEnv:DISPLAY}" },
-	// Set *default* container specific settings.json values on container create.
-	"settings": {
-		"terminal.integrated.profiles.linux": {
-			"bash": {
-				"path": "bash"
-			},
-		},
-		"terminal.integrated.defaultProfile.linux": "bash",
-        "python.pythonPath": "/opt/conda/envs/cresi/bin/python",
-        "python.languageServer": "Pylance",
-        "python.linting.enabled": true,
-        "python.linting.pylintEnabled": true
-	},
+	
     // Add the IDs of extensions you want installed when the container is created.
 
 	"extensions": [
