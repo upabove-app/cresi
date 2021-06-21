@@ -33,6 +33,7 @@ dependencies:
   - pyproj
   - shapely
   - rtree
+  - pylint
   - pip:
     - opencv-python 
     - pillow <7.0 # bug PILLOW_VERSION in torchvision, must be < 7.0 until torchvision is upgraded

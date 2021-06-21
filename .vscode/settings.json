@@ -13,4 +13,6 @@
     // Environment file lets vscode find python files within workspace
     "python.envFile": "${workspaceFolder}/.env",
     "jupyter.jupyterServerType": "remote",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
 }

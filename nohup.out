@@ -1,0 +1,239 @@
+bash: jupyter: command not found
+[I 23:05:41.567 NotebookApp] Writing notebook server cookie secret to /home/vscode/.local/share/jupyter/runtime/notebook_cookie_secret
+[W 2021-06-20 23:05:49.443 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-06-20 23:05:49.444 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-06-20 23:05:49.444 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-06-20 23:05:49.444 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-06-20 23:05:49.455 LabApp] JupyterLab extension loaded from /opt/conda/envs/cresi/lib/python3.8/site-packages/jupyterlab
+[I 2021-06-20 23:05:49.455 LabApp] JupyterLab application directory is /opt/conda/envs/cresi/share/jupyter/lab
+[I 23:05:49.466 NotebookApp] The port 8888 is already in use, trying another port.
+[I 23:05:49.469 NotebookApp] Serving notebooks from local directory: /workspaces/cresi
+[I 23:05:49.469 NotebookApp] Jupyter Notebook 6.4.0 is running at:
+[I 23:05:49.469 NotebookApp] http://chios:8889/?token=0a20a695e2e08186cc2bc9332e9b948121ba11448996e7e7
+[I 23:05:49.469 NotebookApp]  or http://127.0.0.1:8889/?token=0a20a695e2e08186cc2bc9332e9b948121ba11448996e7e7
+[I 23:05:49.470 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 23:05:49.511 NotebookApp] No web browser found: could not locate runnable browser.
+[C 23:05:49.512 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/vscode/.local/share/jupyter/runtime/nbserver-197-open.html
+    Or copy and paste one of these URLs:
+        http://chios:8889/?token=0a20a695e2e08186cc2bc9332e9b948121ba11448996e7e7
+     or http://127.0.0.1:8889/?token=0a20a695e2e08186cc2bc9332e9b948121ba11448996e7e7
+[I 23:05:56.614 NotebookApp] 302 GET / (127.0.0.1) 1.370000ms
+[I 23:05:56.619 NotebookApp] 302 GET /tree? (127.0.0.1) 0.970000ms
+[I 23:06:40.777 NotebookApp] 302 POST /login?next=%2Ftree%3F (127.0.0.1) 1.700000ms
+[C 2021-06-20 23:07:46.279 ServerApp] No such file or directory: /workspaces/cresi/notebook
+[I 2021-06-20 23:10:54.132 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-06-20 23:10:54.147 ServerApp] Writing notebook server cookie secret to /home/vscode/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2021-06-20 23:10:54.442 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-06-20 23:10:54.565 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-06-20 23:10:54.566 LabApp] JupyterLab extension loaded from /opt/conda/envs/cresi/lib/python3.8/site-packages/jupyterlab
+[I 2021-06-20 23:10:54.566 LabApp] JupyterLab application directory is /opt/conda/envs/cresi/share/jupyter/lab
+[I 2021-06-20 23:10:54.571 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-06-20 23:10:54.572 ServerApp] The port 8888 is already in use, trying another port.
+[I 2021-06-20 23:10:54.573 ServerApp] Serving notebooks from local directory: /workspaces/cresi
+[I 2021-06-20 23:10:54.573 ServerApp] Jupyter Server 1.8.0 is running at:
+[I 2021-06-20 23:10:54.573 ServerApp] http://chios:8889/lab?token=cea6e2a0b265d21a829a48c4751b1d3cd6ed091eb45107db
+[I 2021-06-20 23:10:54.573 ServerApp]     http://127.0.0.1:8889/lab?token=cea6e2a0b265d21a829a48c4751b1d3cd6ed091eb45107db
+[I 2021-06-20 23:10:54.573 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2021-06-20 23:10:54.614 ServerApp] No web browser found: could not locate runnable browser.
+[C 2021-06-20 23:10:54.615 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/vscode/.local/share/jupyter/runtime/jpserver-194-open.html
+    Or copy and paste one of these URLs:
+        http://chios:8889/lab?token=cea6e2a0b265d21a829a48c4751b1d3cd6ed091eb45107db
+        http://127.0.0.1:8889/lab?token=cea6e2a0b265d21a829a48c4751b1d3cd6ed091eb45107db
+[I 2021-06-20 23:11:45.512 ServerApp] 302 GET / (127.0.0.1) 0.84ms
+[I 2021-06-20 23:11:45.515 LabApp] 302 GET /lab? (127.0.0.1) 1.00ms
+[I 2021-06-20 23:12:09.815 ServerApp] 302 GET /?token=cea6e2a0b265d21a829a48c4751b1d3cd6ed091eb45107db (127.0.0.1) 0.66ms
+[W 2021-06-20 23:12:14.216 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2021-06-20 23:15:58.154 ServerApp] Writing notebook-signing key to /home/vscode/.local/share/jupyter/notebook_secret
+[W 2021-06-20 23:15:58.160 ServerApp] Notebook notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb is not trusted
+[I 2021-06-20 23:15:59.015 ServerApp] Kernel started: e5c1b22c-fe0b-440a-820f-63bfa00aa054
+[I 2021-06-20 23:16:06.992 ServerApp] Starting buffering for e5c1b22c-fe0b-440a-820f-63bfa00aa054:4ed409c8-6f2e-4f0a-8c79-26b3ddc7086d
+[I 2021-06-20 23:17:58.712 ServerApp] Saving file at /notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-20 23:17:58.713 ServerApp] Notebook notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb is not trusted
+[I 2021-06-20 23:21:21.657 ServerApp] Starting buffering for e5c1b22c-fe0b-440a-820f-63bfa00aa054:c4f0777f-9225-4912-a5b6-9d53f54e62fb
+[I 2021-06-20 23:27:14.979 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-06-20 23:27:14.995 ServerApp] Writing notebook server cookie secret to /home/vscode/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2021-06-20 23:27:15.255 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-06-20 23:27:15.322 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-06-20 23:27:15.324 LabApp] JupyterLab extension loaded from /opt/conda/envs/cresi/lib/python3.8/site-packages/jupyterlab
+[I 2021-06-20 23:27:15.324 LabApp] JupyterLab application directory is /opt/conda/envs/cresi/share/jupyter/lab
+[I 2021-06-20 23:27:15.329 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-06-20 23:27:15.329 ServerApp] The port 8888 is already in use, trying another port.
+[I 2021-06-20 23:27:15.330 ServerApp] Serving notebooks from local directory: /workspaces/cresi
+[I 2021-06-20 23:27:15.330 ServerApp] Jupyter Server 1.8.0 is running at:
+[I 2021-06-20 23:27:15.330 ServerApp] http://chios:8889/lab?token=c1934be713f68f6ebb9320b949a7d0a1c65ee1ced54ab9e9
+[I 2021-06-20 23:27:15.330 ServerApp]     http://127.0.0.1:8889/lab?token=c1934be713f68f6ebb9320b949a7d0a1c65ee1ced54ab9e9
+[I 2021-06-20 23:27:15.330 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2021-06-20 23:27:15.344 ServerApp] No web browser found: could not locate runnable browser.
+[C 2021-06-20 23:27:15.344 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/vscode/.local/share/jupyter/runtime/jpserver-206-open.html
+    Or copy and paste one of these URLs:
+        http://chios:8889/lab?token=c1934be713f68f6ebb9320b949a7d0a1c65ee1ced54ab9e9
+        http://127.0.0.1:8889/lab?token=c1934be713f68f6ebb9320b949a7d0a1c65ee1ced54ab9e9
+[I 2021-06-20 23:27:42.869 ServerApp] 302 GET /?token=c1934be713f68f6ebb9320b949a7d0a1c65ee1ced54ab9e9 (127.0.0.1) 1.03ms
+[W 2021-06-20 23:27:45.505 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2021-06-20 23:42:14.331 ServerApp] 302 GET /?token=c1934be713f68f6ebb9320b949a7d0a1c65ee1ced54ab9e9 (127.0.0.1) 0.89ms
+[W 2021-06-20 23:42:17.497 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2021-06-20 23:42:25.087 ServerApp] 302 GET /?token=c1934be713f68f6ebb9320b949a7d0a1c65ee1ced54ab9e9 (127.0.0.1) 0.99ms
+[W 2021-06-20 23:42:27.977 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2021-06-20 23:42:35.075 ServerApp] New terminal with automatic name: 1
+TermSocket.open: 1
+TermSocket.open: Opened 1
+[I 2021-06-20 23:43:07.689 ServerApp] Writing notebook-signing key to /home/vscode/.local/share/jupyter/notebook_secret
+[W 2021-06-20 23:43:07.694 ServerApp] Notebook notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb is not trusted
+[I 2021-06-20 23:43:08.494 ServerApp] Kernel started: abd09e04-1b3a-4734-b5a3-93d50c02d8ff
+[I 2021-06-20 23:45:08.291 ServerApp] Saving file at /notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-20 23:45:08.292 ServerApp] Notebook notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb is not trusted
+Websocket closed
+[I 2021-06-21 00:41:42.000 ServerApp] Starting buffering for abd09e04-1b3a-4734-b5a3-93d50c02d8ff:0d842986-f702-4897-a100-a09550b0dee9
+[I 2021-06-21 00:41:57.199 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-06-21 00:41:57.477 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-06-21 00:41:57.569 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-06-21 00:41:57.570 LabApp] JupyterLab extension loaded from /opt/conda/envs/cresi/lib/python3.8/site-packages/jupyterlab
+[I 2021-06-21 00:41:57.570 LabApp] JupyterLab application directory is /opt/conda/envs/cresi/share/jupyter/lab
+[I 2021-06-21 00:41:57.575 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-06-21 00:41:57.575 ServerApp] The port 8888 is already in use, trying another port.
+[I 2021-06-21 00:41:57.576 ServerApp] Serving notebooks from local directory: /workspaces/cresi
+[I 2021-06-21 00:41:57.576 ServerApp] Jupyter Server 1.8.0 is running at:
+[I 2021-06-21 00:41:57.576 ServerApp] http://chios:8889/lab?token=8fecd91a352d0a4d079885dd3afab4bfd96f00ad85295787
+[I 2021-06-21 00:41:57.576 ServerApp]     http://127.0.0.1:8889/lab?token=8fecd91a352d0a4d079885dd3afab4bfd96f00ad85295787
+[I 2021-06-21 00:41:57.576 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2021-06-21 00:41:57.589 ServerApp] No web browser found: could not locate runnable browser.
+[C 2021-06-21 00:41:57.590 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/vscode/.local/share/jupyter/runtime/jpserver-164-open.html
+    Or copy and paste one of these URLs:
+        http://chios:8889/lab?token=8fecd91a352d0a4d079885dd3afab4bfd96f00ad85295787
+        http://127.0.0.1:8889/lab?token=8fecd91a352d0a4d079885dd3afab4bfd96f00ad85295787
+[I 2021-06-21 00:42:06.522 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-06-21 00:42:06.537 ServerApp] Writing notebook server cookie secret to /home/vscode/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2021-06-21 00:42:06.850 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-06-21 00:42:06.927 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-06-21 00:42:06.928 LabApp] JupyterLab extension loaded from /opt/conda/envs/cresi/lib/python3.8/site-packages/jupyterlab
+[I 2021-06-21 00:42:06.928 LabApp] JupyterLab application directory is /opt/conda/envs/cresi/share/jupyter/lab
+[I 2021-06-21 00:42:06.933 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-06-21 00:42:06.934 ServerApp] The port 8888 is already in use, trying another port.
+[I 2021-06-21 00:42:06.935 ServerApp] Serving notebooks from local directory: /workspaces/cresi
+[I 2021-06-21 00:42:06.935 ServerApp] Jupyter Server 1.8.0 is running at:
+[I 2021-06-21 00:42:06.935 ServerApp] http://chios:8889/lab?token=88742e271ea653441837a4e1dca1f47f698fe6effbaf9e8d
+[I 2021-06-21 00:42:06.935 ServerApp]     http://127.0.0.1:8889/lab?token=88742e271ea653441837a4e1dca1f47f698fe6effbaf9e8d
+[I 2021-06-21 00:42:06.935 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2021-06-21 00:42:06.949 ServerApp] No web browser found: could not locate runnable browser.
+[C 2021-06-21 00:42:06.949 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/vscode/.local/share/jupyter/runtime/jpserver-210-open.html
+    Or copy and paste one of these URLs:
+        http://chios:8889/lab?token=88742e271ea653441837a4e1dca1f47f698fe6effbaf9e8d
+        http://127.0.0.1:8889/lab?token=88742e271ea653441837a4e1dca1f47f698fe6effbaf9e8d
+[W 2021-06-21 00:42:35.414 ServerApp] Clearing invalid/expired login cookie username-localhost-8890
+[W 2021-06-21 00:42:35.415 ServerApp] Forbidden
+[W 2021-06-21 00:42:35.416 ServerApp] 403 GET /api/sessions?1624236155179 (127.0.0.1) 2.62ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[I 2021-06-21 00:42:35.873 ServerApp] 302 GET /?token=88742e271ea653441837a4e1dca1f47f698fe6effbaf9e8d (127.0.0.1) 0.76ms
+[W 2021-06-21 00:42:39.030 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2021-06-21 00:42:41.693 ServerApp] Forbidden
+[W 2021-06-21 00:42:41.694 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236161687 (127.0.0.1) 2.52ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:42:51.701 ServerApp] Forbidden
+[W 2021-06-21 00:42:51.702 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236171696 (127.0.0.1) 1.27ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:43:01.709 ServerApp] Forbidden
+[W 2021-06-21 00:43:01.710 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236181704 (127.0.0.1) 1.25ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:43:01.724 ServerApp] Forbidden
+[W 2021-06-21 00:43:01.724 ServerApp] 403 GET /api/sessions?1624236181721 (127.0.0.1) 0.78ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:43:11.719 ServerApp] Forbidden
+[W 2021-06-21 00:43:11.719 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236191714 (127.0.0.1) 1.28ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:43:12.436 ServerApp] Forbidden
+[W 2021-06-21 00:43:12.436 ServerApp] 403 GET /api/kernels?1624236192431 (127.0.0.1) 1.24ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:43:21.727 ServerApp] Forbidden
+[W 2021-06-21 00:43:21.728 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236201722 (127.0.0.1) 1.25ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:43:28.520 ServerApp] Forbidden
+[W 2021-06-21 00:43:28.520 ServerApp] 403 GET /api/terminals?1624236208515 (127.0.0.1) 1.17ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:43:31.736 ServerApp] Forbidden
+[W 2021-06-21 00:43:31.736 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236211731 (127.0.0.1) 1.27ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:43:41.744 ServerApp] Forbidden
+[W 2021-06-21 00:43:41.744 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236221739 (127.0.0.1) 1.27ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:43:48.840 ServerApp] Forbidden
+[W 2021-06-21 00:43:48.840 ServerApp] 403 GET /api/kernelspecs?1624236228835 (127.0.0.1) 1.27ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:43:51.755 ServerApp] Forbidden
+[W 2021-06-21 00:43:51.756 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236231747 (127.0.0.1) 5.44ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:43:54.099 ServerApp] Forbidden
+[W 2021-06-21 00:43:54.100 ServerApp] 403 GET /api/kernels?1624236234094 (127.0.0.1) 1.59ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:44:01.315 ServerApp] Forbidden
+[W 2021-06-21 00:44:01.315 ServerApp] 403 GET /api/sessions?1624236241310 (127.0.0.1) 1.27ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:44:01.766 ServerApp] Forbidden
+[W 2021-06-21 00:44:01.766 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236241759 (127.0.0.1) 1.28ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:44:11.775 ServerApp] Forbidden
+[W 2021-06-21 00:44:11.776 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236251770 (127.0.0.1) 1.28ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:44:21.784 ServerApp] Forbidden
+[W 2021-06-21 00:44:21.784 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236261779 (127.0.0.1) 1.26ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:44:31.792 ServerApp] Forbidden
+[W 2021-06-21 00:44:31.793 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236271787 (127.0.0.1) 1.40ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:44:41.801 ServerApp] Forbidden
+[W 2021-06-21 00:44:41.801 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236281795 (127.0.0.1) 1.44ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:44:42.031 ServerApp] Forbidden
+[W 2021-06-21 00:44:42.031 ServerApp] 403 GET /api/kernels?1624236282026 (127.0.0.1) 1.19ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:44:51.809 ServerApp] Forbidden
+[W 2021-06-21 00:44:51.809 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236291804 (127.0.0.1) 1.25ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:44:59.263 ServerApp] Forbidden
+[W 2021-06-21 00:44:59.263 ServerApp] 403 GET /api/kernelspecs?1624236299258 (127.0.0.1) 1.26ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:45:01.817 ServerApp] Forbidden
+[W 2021-06-21 00:45:01.818 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236301812 (127.0.0.1) 1.25ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:45:11.826 ServerApp] Forbidden
+[W 2021-06-21 00:45:11.827 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236311820 (127.0.0.1) 1.95ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:45:21.835 ServerApp] Forbidden
+[W 2021-06-21 00:45:21.836 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236321830 (127.0.0.1) 1.96ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:45:31.845 ServerApp] Forbidden
+[W 2021-06-21 00:45:31.845 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236331839 (127.0.0.1) 1.97ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:45:41.854 ServerApp] Forbidden
+[W 2021-06-21 00:45:41.855 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236341848 (127.0.0.1) 1.96ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:45:51.862 ServerApp] Forbidden
+[W 2021-06-21 00:45:51.863 ServerApp] 403 GET /api/contents/notebooks/sn3_data_prep?content=1&1624236351857 (127.0.0.1) 1.29ms referer=http://localhost:8890/lab/tree/notebooks/sn3_data_prep/cresi_sn3_data_prep.ipynb
+[W 2021-06-21 00:49:37.280 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2021-06-21 01:06:08.298 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-06-21 01:06:08.594 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-06-21 01:06:08.675 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-06-21 01:06:08.678 LabApp] JupyterLab extension loaded from /opt/conda/envs/cresi/lib/python3.8/site-packages/jupyterlab
+[I 2021-06-21 01:06:08.678 LabApp] JupyterLab application directory is /opt/conda/envs/cresi/share/jupyter/lab
+[I 2021-06-21 01:06:08.687 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-06-21 01:06:08.687 ServerApp] The port 8888 is already in use, trying another port.
+[I 2021-06-21 01:06:08.689 ServerApp] Serving notebooks from local directory: /workspaces/cresi
+[I 2021-06-21 01:06:08.689 ServerApp] Jupyter Server 1.8.0 is running at:
+[I 2021-06-21 01:06:08.689 ServerApp] http://chios:8889/lab?token=73b7c714be0047e29ea59fb1cc5a0e2a405483972a643a38
+[I 2021-06-21 01:06:08.689 ServerApp]     http://127.0.0.1:8889/lab?token=73b7c714be0047e29ea59fb1cc5a0e2a405483972a643a38
+[I 2021-06-21 01:06:08.689 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2021-06-21 01:06:08.710 ServerApp] No web browser found: could not locate runnable browser.
+[C 2021-06-21 01:06:08.710 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/vscode/.local/share/jupyter/runtime/jpserver-152-open.html
+    Or copy and paste one of these URLs:
+        http://chios:8889/lab?token=73b7c714be0047e29ea59fb1cc5a0e2a405483972a643a38
+        http://127.0.0.1:8889/lab?token=73b7c714be0047e29ea59fb1cc5a0e2a405483972a643a38
+[I 2021-06-21 01:57:56.012 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-06-21 01:57:56.028 ServerApp] Writing notebook server cookie secret to /home/vscode/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2021-06-21 01:57:56.293 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-06-21 01:57:56.361 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-06-21 01:57:56.363 LabApp] JupyterLab extension loaded from /opt/conda/envs/cresi/lib/python3.8/site-packages/jupyterlab
+[I 2021-06-21 01:57:56.363 LabApp] JupyterLab application directory is /opt/conda/envs/cresi/share/jupyter/lab
+[I 2021-06-21 01:57:56.368 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-06-21 01:57:56.368 ServerApp] The port 8888 is already in use, trying another port.
+[I 2021-06-21 01:57:56.369 ServerApp] Serving notebooks from local directory: /workspaces/cresi
+[I 2021-06-21 01:57:56.369 ServerApp] Jupyter Server 1.8.0 is running at:
+[I 2021-06-21 01:57:56.369 ServerApp] http://chios:8889/lab?token=5ca873cda353f9a66f2ef863d59ca37cea1ca2e131fabee6
+[I 2021-06-21 01:57:56.369 ServerApp]     http://127.0.0.1:8889/lab?token=5ca873cda353f9a66f2ef863d59ca37cea1ca2e131fabee6
+[I 2021-06-21 01:57:56.369 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2021-06-21 01:57:56.382 ServerApp] No web browser found: could not locate runnable browser.
+[C 2021-06-21 01:57:56.383 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/vscode/.local/share/jupyter/runtime/jpserver-207-open.html
+    Or copy and paste one of these URLs:
+        http://chios:8889/lab?token=5ca873cda353f9a66f2ef863d59ca37cea1ca2e131fabee6
+        http://127.0.0.1:8889/lab?token=5ca873cda353f9a66f2ef863d59ca37cea1ca2e131fabee6

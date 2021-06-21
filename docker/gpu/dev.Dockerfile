@@ -88,4 +88,4 @@ ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES graphics,utility,compute
 ENV QT_X11_NO_MITSHM 1
 
-WORKDIR /workspace
+WORKDIR /workspaces/cresi

@@ -2,7 +2,7 @@
 	"name": "cresi",
     // The context setting is the location where the docker file will be built from. You can specify the path relative to this file.
     "build": {
-		"context": "..",
+		"context": "../docker/gpu",
     	// This is the name of the dockerfile. It is also specified as a path relative to this file.
     	"dockerfile": "../docker/gpu/dev.Dockerfile",
 		"args": {
@@ -28,13 +28,14 @@
     "remoteUser": "vscode",
     // These are the arguments you want to pass into the docker run command. You can place any argument that is valid to use with docker run
     "runArgs": [
+		"--gpus=all",
+		"--shm-size=16G",
 		"--network=host",
 		"--cap-add=SYS_PTRACE",
 		"--security-opt=seccomp:unconfined",
 		"--security-opt=apparmor:unconfined",
 		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
-		"--gpus all",
-		" --shm-size 8G"
+		"--volume=/data-1/s3:/data"
 	],
 	"containerEnv": { "DISPLAY": "${localEnv:DISPLAY}" },
 	
@@ -68,13 +69,13 @@
 	//"postCreateCommand": ["apt-get update && apt-get install -y curl", "pip3 install -r requirements.txt"],
 
 	"mounts": [
-		"source=${localWorkspaceFolder}:/workspace, type=volume",
-		"source=/data-1/s3:/data, type=volume",
+		//"source=${localWorkspaceFolder},target=/workspace,type=volume",
+		//"source=/data-1/s3,target=/data,type=volume"
 		// persit local history of bash commands
-		"source=projectname-bashhistory,target=/commandhistory,type=volume"
+		//"source=projectname-bashhistory,target=/commandhistory,type=volume"
 	],
 
 	// Use 'postStartCommand' to run commands after the container is created.
-	"postStartCommand": "nohup bash -c 'jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root &'",
+	"postStartCommand": "nohup bash -c 'jupyter lab --ip=0.0.0.0 --port=8888 --allow-root &'",
 
 }
