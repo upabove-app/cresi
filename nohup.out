@@ -237,3 +237,27 @@ Websocket closed
     Or copy and paste one of these URLs:
         http://chios:8889/lab?token=5ca873cda353f9a66f2ef863d59ca37cea1ca2e131fabee6
         http://127.0.0.1:8889/lab?token=5ca873cda353f9a66f2ef863d59ca37cea1ca2e131fabee6
+[I 2021-06-21 02:44:15.511 ServerApp] jupyterlab | extension was successfully linked.
+[I 2021-06-21 02:44:15.805 ServerApp] nbclassic | extension was successfully linked.
+[I 2021-06-21 02:44:15.880 ServerApp] nbclassic | extension was successfully loaded.
+[I 2021-06-21 02:44:15.881 LabApp] JupyterLab extension loaded from /opt/conda/envs/cresi/lib/python3.8/site-packages/jupyterlab
+[I 2021-06-21 02:44:15.881 LabApp] JupyterLab application directory is /opt/conda/envs/cresi/share/jupyter/lab
+[I 2021-06-21 02:44:15.886 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2021-06-21 02:44:15.887 ServerApp] The port 8888 is already in use, trying another port.
+[I 2021-06-21 02:44:15.888 ServerApp] Serving notebooks from local directory: /workspaces/cresi
+[I 2021-06-21 02:44:15.888 ServerApp] Jupyter Server 1.8.0 is running at:
+[I 2021-06-21 02:44:15.888 ServerApp] http://chios:8889/lab?token=aaf8b8d1f9cab444e8b94407a4390722efc3dece210e6c90
+[I 2021-06-21 02:44:15.888 ServerApp]     http://127.0.0.1:8889/lab?token=aaf8b8d1f9cab444e8b94407a4390722efc3dece210e6c90
+[I 2021-06-21 02:44:15.888 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2021-06-21 02:44:15.923 ServerApp] No web browser found: could not locate runnable browser.
+[C 2021-06-21 02:44:15.924 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/vscode/.local/share/jupyter/runtime/jpserver-186-open.html
+    Or copy and paste one of these URLs:
+        http://chios:8889/lab?token=aaf8b8d1f9cab444e8b94407a4390722efc3dece210e6c90
+        http://127.0.0.1:8889/lab?token=aaf8b8d1f9cab444e8b94407a4390722efc3dece210e6c90
+[I 2021-06-21 02:45:00.527 ServerApp] 302 GET /?token=5ca873cda353f9a66f2ef863d59ca37cea1ca2e131fabee6 (127.0.0.1) 1.07ms
+[I 2021-06-21 02:45:00.533 LabApp] 302 GET /lab?token=5ca873cda353f9a66f2ef863d59ca37cea1ca2e131fabee6 (127.0.0.1) 0.92ms
+[I 2021-06-21 02:45:06.877 ServerApp] 302 GET /?token=aaf8b8d1f9cab444e8b94407a4390722efc3dece210e6c90 (127.0.0.1) 0.65ms
+[W 2021-06-21 02:45:09.690 LabApp] Could not determine jupyterlab build status without nodejs
